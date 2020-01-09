@@ -1,9 +1,10 @@
 $background-color:#353536;
 $violet:#BD11FA;
 $bleu:#46C2FF;
-$grisfonce:#20202C;
+$grisfonce:#2c2c2d;
 $grisopacite:rgba(57, 57, 77, 0.39);
 $vert:#00EC98;
+$vertopacite:rgba(0, 236, 153, 0.23);
 $white:#ffffff;
 $whitetexte:#ffffff3a;
 
@@ -14,4 +15,43 @@ $gradient:linear-gradient(to right, $bleu, $violet);
     text-decoration: none;
     font-weight: 200;
     font-size: 20px;
+}
+
+%h3{
+    color: $white;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+%h2{
+    color: $white;
+    font-size: 45px;
+    font-weight: 100;
+}
+
+
+
+%p{
+    color: $whitetexte;
+    font-size: 13px;
+    line-height: 160%;
+    margin-top: -10px;
+}
+
+
+%bloc{
+    padding: 40px;
+    display: flex;
+    box-shadow: 2px 2px 30px 5px $grisfonce; 
+    border-radius: 10px;
+}
+
+
+%button-gradient{
+    background-image: $gradient;
+    border: none;
+    height:60px;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 20px 1px $gradient; 
 }

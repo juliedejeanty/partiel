@@ -1,8 +1,43 @@
-button a {
+.section2 button a, .plans a {
   color: #ffffff;
   text-decoration: none;
   font-weight: 200;
   font-size: 20px;
+}
+
+.section4 .gauche h3, .section3 .droite h3 {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.section2 .gauche h2 {
+  color: #ffffff;
+  font-size: 45px;
+  font-weight: 100;
+}
+
+.section4 .gauche p, .section3 .droite p, .section2 .gauche p {
+  color: #ffffff3a;
+  font-size: 13px;
+  line-height: 160%;
+  margin-top: -10px;
+}
+
+.section3 .gauche .ligne3 .bloc2, .section3 .gauche .ligne3 .bloc1, .section3 .gauche .ligne2 .bloc2, .section3 .gauche .ligne2 .bloc1, .section3 .gauche .ligne1 .bloc2, .section3 .gauche .ligne1 .bloc1 {
+  padding: 40px;
+  display: flex;
+  box-shadow: 2px 2px 30px 5px #2c2c2d;
+  border-radius: 10px;
+}
+
+.plans {
+  background-image: linear-gradient(to right, #46C2FF, #BD11FA);
+  border: none;
+  height: 60px;
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px 1px linear-gradient(to right, #46C2FF, #BD11FA);
 }
 
 body {
@@ -61,36 +96,18 @@ h1 {
   display: flex;
 }
 
-.gauche {
+.section2 .gauche {
   height: 200px;
   width: 400px;
   margin-left: 150px;
   margin-top: 150px;
 }
 
-h2 {
-  color: #ffffff;
-  font-size: 45px;
-  font-weight: 100;
+.section2 .gauche .boutons {
+  margin-top: 50px;
 }
 
-.gauche p {
-  color: #ffffff3a;
-  font-size: 13px;
-  line-height: 160%;
-  margin-top: -10px;
-}
-
-.boutons .plans {
-  background-image: linear-gradient(to right, #46C2FF, #BD11FA);
-  border: none;
-  height: 60px;
-  width: 200px;
-  border-radius: 5px;
-  box-shadow: 2px 2px 20px 1px linear-gradient(to right, #46C2FF, #BD11FA);
-}
-
-.boutons .start {
+.section2 .boutons .start {
   border: 2px solid #ffffff;
   background-color: #353536;
   height: 60px;
@@ -99,17 +116,175 @@ h2 {
   margin-left: 5px;
 }
 
-.droite img {
+.section2 .droite img {
   height: 660px;
   position: absolute;
   margin-top: -20px;
 }
 
-.droite .triangle {
+.section2 .droite .triangle {
   height: 150px;
   width: 150px;
   position: absolute;
   margin-top: 10px;
+}
+
+.section3 {
+  display: flex;
+  margin-top: 300px;
+}
+
+.section3 .gauche {
+  width: 300px;
+  height: 300px;
+}
+
+.section3 .gauche .grille {
+  margin-top: -100px;
+  margin-left: -100px;
+}
+
+.section3 .gauche .ligne1 {
+  display: flex;
+  margin-left: 300px;
+}
+
+.section3 .gauche .ligne1 .bloc1 {
+  height: 60px;
+  width: 100px;
+}
+
+.section3 .gauche .ligne1 .bloc2 {
+  height: 40px;
+  width: 120px;
+  margin-left: 30px;
+}
+
+.section3 .gauche .ligne1 .bloc1 img {
+  height: 60px;
+  width: 120px;
+}
+
+.section3 .gauche .ligne1 .bloc2 img {
+  height: 40px;
+  width: 180px;
+}
+
+.section3 .gauche .ligne2 {
+  margin-left: 150px;
+  margin-top: 30px;
+  display: flex;
+}
+
+.section3 .gauche .ligne2 .bloc1 {
+  height: 30px;
+  width: 160px;
+}
+
+.section3 .gauche .ligne2 .bloc2 {
+  height: 60px;
+  width: 140px;
+  margin-left: 30px;
+}
+
+.section3 .gauche .ligne2 .bloc1 img {
+  height: 30px;
+  width: 160px;
+}
+
+.section3 .gauche .ligne2 .bloc2 img {
+  height: 60px;
+  width: 140px;
+}
+
+.section3 .gauche .ligne2 :last-child {
+  margin-left: 30px;
+}
+
+.section3 .gauche .ligne3 {
+  display: flex;
+  margin-left: 150px;
+  margin-top: 30px;
+}
+
+.section3 .gauche .ligne3 .bloc1 {
+  height: 60px;
+  margin-top: -30px;
+  width: 140px;
+  margin-left: 30px;
+}
+
+.section3 .gauche .ligne3 .bloc1 img {
+  width: 140px;
+  height: 60px;
+}
+
+.section3 .gauche .ligne3 .bloc2 {
+  height: 90px;
+  width: 120px;
+  margin-left: 30px;
+}
+
+.section3 .gauche .ligne3 .bloc2 img {
+  height: 90px;
+  width: 120px;
+}
+
+.section3 .gauche .ligne3 .bloc1 {
+  margin-left: 50px;
+}
+
+.section3 .gauche img {
+  width: 300px;
+  height: 300px;
+}
+
+.section3 .droite {
+  width: 380px;
+  margin-left: 600px;
+  margin-top: 300px;
+}
+
+.section3 .droite img {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  margin-left: 350px;
+}
+
+.section4 {
+  display: flex;
+  margin-top: 500px;
+}
+
+.section4 .gauche {
+  display: flex;
+  margin-left: 200px;
+  flex-direction: column;
+  width: 600px;
+}
+
+.section4 .gauche .rectangle {
+  width: 150px;
+  height: 30px;
+  background-color: rgba(0, 236, 153, 0.23);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section4 .gauche .rectangle p {
+  color: #00EC98;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.section4 .gauche h3 {
+  margin-top: 15px;
+}
+
+.section4 .gauche .plans {
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
