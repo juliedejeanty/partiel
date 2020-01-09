@@ -60,3 +60,18 @@ $gradient:linear-gradient(to right, $bleu, $violet);
     border-radius: 5px;
     box-shadow: 2px 2px 20px 1px $gradient; 
 }
+
+%powerfull{
+    width: 150px;
+    height: 30px;
+    background-color: $vertopacite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%powerfull-texte{
+    color: $vert;
+    font-size: 13px;
+    margin-top: 10px;
+}

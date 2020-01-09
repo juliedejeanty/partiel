@@ -5,13 +5,13 @@
   font-size: 20px;
 }
 
-.section4 .gauche h3, .section3 .droite h3 {
+.section5 .droite h3, .section4 .gauche h3, .section3 .droite h3 {
   color: #ffffff;
   font-size: 30px;
   font-weight: 400;
 }
 
-.section2 .gauche h2 {
+.section6 h2, .section2 .gauche h2 {
   color: #ffffff;
   font-size: 45px;
   font-weight: 100;
@@ -23,7 +23,7 @@
   font-weight: 400;
 }
 
-.section4 .droite .customizable p, .section4 .gauche p, .section3 .droite p, .section2 .gauche p {
+.section5 .droite p, .section4 .droite .customizable p, .section4 .gauche p, .section3 .droite p, .section2 .gauche p {
   color: #ffffff3a;
   font-size: 13px;
   line-height: 160%;
@@ -44,6 +44,21 @@
   width: 200px;
   border-radius: 5px;
   box-shadow: 2px 2px 20px 1px linear-gradient(to right, #46C2FF, #BD11FA);
+}
+
+.section5 .droite .rectangle, .section4 .gauche .rectangle {
+  width: 150px;
+  height: 30px;
+  background-color: rgba(0, 236, 153, 0.23);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section5 .droite .rectangle p, .section4 .gauche .rectangle p {
+  color: #00EC98;
+  font-size: 13px;
+  margin-top: 10px;
 }
 
 body {
@@ -137,7 +152,7 @@ h1 {
 
 .section3 {
   display: flex;
-  margin-top: 300px;
+  margin-top: 400px;
 }
 
 .section3 .gauche {
@@ -146,7 +161,7 @@ h1 {
 }
 
 .section3 .gauche .grille {
-  margin-top: -100px;
+  margin-top: 100px;
   margin-left: -100px;
 }
 
@@ -248,7 +263,7 @@ h1 {
 .section3 .droite {
   width: 380px;
   margin-left: 600px;
-  margin-top: 300px;
+  margin-top: 150px;
 }
 
 .section3 .droite img {
@@ -260,7 +275,7 @@ h1 {
 
 .section4 {
   display: flex;
-  margin-top: 500px;
+  margin-top: 700px;
 }
 
 .section4 .gauche {
@@ -268,21 +283,6 @@ h1 {
   margin-left: 200px;
   flex-direction: column;
   width: 400px;
-}
-
-.section4 .gauche .rectangle {
-  width: 150px;
-  height: 30px;
-  background-color: rgba(0, 236, 153, 0.23);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.section4 .gauche .rectangle p {
-  color: #00EC98;
-  font-size: 13px;
-  margin-top: 10px;
 }
 
 .section4 .gauche h3 {
@@ -323,6 +323,51 @@ h1 {
 
 .ligne1 {
   margin-top: -300px;
+}
+
+.section5 {
+  display: flex;
+  margin-top: 200px;
+}
+
+.section5 .gauche {
+  display: flex;
+}
+
+.section5 .gauche .goodevening {
+  width: 100px;
+  height: 200px;
+  background-color: linear-gradient(to right, #46C2FF, #BD11FA);
+}
+
+.section5 .droite {
+  display: flex;
+  flex-direction: column;
+  margin-left: 300px;
+  width: 300px;
+}
+
+.section5 .droite .plans {
+  margin-top: 20px;
+}
+
+.section5 .droite img {
+  height: 300px;
+  width: 300px;
+  margin-top: 400px;
+  margin-left: 200px;
+  position: absolute;
+}
+
+.section6 {
+  display: flex;
+  justify-content: center;
+  margin-top: 300px;
+}
+
+.section6 h2 {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
