@@ -4,6 +4,7 @@
 body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color:$background-color;
+    font-weight: 200;
 }
 
 nav{
@@ -19,7 +20,7 @@ ul{
 }
 
 ul :last-child a{
-    border: 2px solid white;
+    border: 2px solid $white;
     padding: 10px;
     border-radius: 5%;
     color: $white;
@@ -34,8 +35,7 @@ li{
 
 li a{
     text-decoration: none;
-    color: grey;
-    font-weight: 200;
+    color: $whitetexte;
 }
 
 .logo{
@@ -48,7 +48,67 @@ li a{
 
 h1{
     color: $white;
-    font-weight: 200;
     margin-left: 30px;
     font-size: 25px;
+    font-weight: 200;
 }
+
+.section2{
+    display: flex;
+}
+
+.gauche{
+    height: 200px;
+    width: 400px;
+    margin-left: 150px;
+    margin-top: 150px;
+}
+
+h2{
+    color: $white;
+    font-size: 45px;
+    font-weight: 100;
+}
+
+.gauche p{
+    color: $whitetexte;
+    font-size: 13px;
+    line-height: 160%;
+    margin-top: -10px;
+}
+
+.boutons .plans{
+    background-image: $gradient;
+    border: none;
+    height:60px;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 20px 1px $gradient; 
+}
+
+button a{
+    @extend %button;
+}
+
+.boutons .start{
+    border: 2px solid $white;
+    background-color: $background-color;
+    height:60px;
+    width: 180px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.droite img{
+    height: 660px;
+    position: absolute;
+    margin-top: -20px;;
+}
+
+.droite .triangle{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    margin-top: 10px;
+}
+
