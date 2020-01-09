@@ -17,14 +17,20 @@
   font-weight: 100;
 }
 
-.section4 .gauche p, .section3 .droite p, .section2 .gauche p {
+.section4 .droite .customizable h4 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.section4 .droite .customizable p, .section4 .gauche p, .section3 .droite p, .section2 .gauche p {
   color: #ffffff3a;
   font-size: 13px;
   line-height: 160%;
   margin-top: -10px;
 }
 
-.section3 .gauche .ligne3 .bloc2, .section3 .gauche .ligne3 .bloc1, .section3 .gauche .ligne2 .bloc2, .section3 .gauche .ligne2 .bloc1, .section3 .gauche .ligne1 .bloc2, .section3 .gauche .ligne1 .bloc1 {
+.section4 .droite .customizable, .section3 .gauche .ligne3 .bloc2, .section3 .gauche .ligne3 .bloc1, .section3 .gauche .ligne2 .bloc2, .section3 .gauche .ligne2 .bloc1, .section3 .gauche .ligne1 .bloc2, .section3 .gauche .ligne1 .bloc1 {
   padding: 40px;
   display: flex;
   box-shadow: 2px 2px 30px 5px #2c2c2d;
@@ -261,7 +267,7 @@ h1 {
   display: flex;
   margin-left: 200px;
   flex-direction: column;
-  width: 600px;
+  width: 400px;
 }
 
 .section4 .gauche .rectangle {
@@ -285,6 +291,38 @@ h1 {
 
 .section4 .gauche .plans {
   margin-top: 20px;
+}
+
+.section4 .droite {
+  display: flex;
+  margin-left: 30px;
+}
+
+.section4 .droite .customizable {
+  width: 300px;
+  height: 320px;
+  background-color: #2c2c2d;
+  display: flex;
+  flex-direction: column;
+}
+
+.section4 .droite .customizable img {
+  background-color: rgba(57, 57, 77, 0.39);
+  padding: 30px;
+  padding-right: 310px;
+  margin-left: -40px;
+}
+
+.section4 .droite .customizable p {
+  line-height: 180%;
+}
+
+.ligne1 :last-child {
+  margin-top: 20px;
+}
+
+.ligne1 {
+  margin-top: -300px;
 }
 
 /*# sourceMappingURL=style.css.map */

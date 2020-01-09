@@ -264,7 +264,7 @@ h1{
     display: flex;
     margin-left: 200px;
     flex-direction: column;
-    width: 600px;
+    width: 400px;
 }
 
 .section4 .gauche .rectangle{
@@ -293,5 +293,45 @@ h1{
 
 .section4 .gauche .plans{
     margin-top: 20px;
+}
+
+.section4 .droite {
+    display: flex;
+    margin-left: 30px;
+}
+
+.section4 .droite .customizable {
+    width: 300px;
+    height: 320px;
+    background-color: $grisfonce;
+    @extend %bloc;
+    display: flex;
+    flex-direction: column;
+}
+
+.section4 .droite .customizable img{
+    background-color: $grisopacite;
+    padding: 30px;
+    padding-right: 310px;
+    margin-left: -40px;
+}
+
+
+.section4 .droite .customizable h4{
+    @extend %h4;
+}
+
+.section4 .droite .customizable p{
+    @extend %p;
+    line-height: 180%;
+}
+
+
+.ligne1 :last-child {
+    margin-top: 20px;
+}
+
+.ligne1{
+    margin-top: -300px;
 }
 
